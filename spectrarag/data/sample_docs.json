@@ -1,0 +1,86 @@
+[
+  {
+    "id": "doc_assistive_defxv_01",
+    "text": "DefXV is a patented augmented reality (AR) glasses system designed specifically for the deaf and hard-of-hearing community. It features ultra-low-latency real-time speech-to-text transcription projected directly onto transparent micro-OLED displays with under 18ms photon-to-motion latency. The glasses integrate quad-microphone beamforming arrays to isolate directional speaker audio in high-noise environments up to 85 dB SNR.",
+    "metadata": {
+      "category": "assistive_tech",
+      "product": "DefXV",
+      "topic": "hardware_specs"
+    }
+  },
+  {
+    "id": "doc_assistive_defxv_02",
+    "text": "DefXV utilizes an on-device computer vision engine running a quantized 8-bit MobileNet-V4 backbone to recognize sign language gestures at 120 FPS. The system translates continuous American Sign Language (ASL) and Indian Sign Language (ISL) hand shapes into synthesised audio via bone-conduction transducers, enabling two-way communication without external network dependence.",
+    "metadata": {
+      "category": "assistive_tech",
+      "product": "DefXV",
+      "topic": "gesture_recognition"
+    }
+  },
+  {
+    "id": "doc_deskavr_metahuman_01",
+    "text": "DeskAVR is a hyper-realistic interview and presentation simulator powered by photorealistic metahuman avatars. The simulation engine synchronizes facial blendshapes, eye contact tracking, and conversational speech synthesis using a low-latency WebRTC streaming pipeline. Candidates experience adaptive behavioral interviewers that evaluate technical depth, vocal confidence, and pacing in real time.",
+    "metadata": {
+      "category": "interview_simulation",
+      "product": "DeskAVR",
+      "topic": "avatar_engine"
+    }
+  },
+  {
+    "id": "doc_deskavr_eval_02",
+    "text": "DeskAVR's automated evaluation harness leverages LangGraph multi-agent workflows to grade candidate responses against industry-standard rubrics. The rubric checks technical accuracy, communication structure (STAR method), and problem-solving depth. The system generates detailed post-interview diagnostic reports with timestamped video highlights and actionable improvement plans within 90 seconds.",
+    "metadata": {
+      "category": "interview_simulation",
+      "product": "DeskAVR",
+      "topic": "evaluation_rubric"
+    }
+  },
+  {
+    "id": "doc_llm_speculative_01",
+    "text": "Speculative decoding accelerates autoregressive large language model inference by 2.5x to 3.2x by deploying a lightweight draft model to predict future candidate tokens in parallel. A larger target model then verifies all drafted tokens in a single forward pass using tree-attention masks (Medusa). This preserves exact output distribution equivalence while overcoming memory-bandwidth bottlenecks.",
+    "metadata": {
+      "category": "llm_systems",
+      "topic": "speculative_decoding"
+    }
+  },
+  {
+    "id": "doc_llm_kv_cache_02",
+    "text": "Heavy-Hitter Oracle (H2O) KV-cache eviction reduces autoregressive memory consumption by 40% to 50% during long-context generation. By identifying tokens that receive cumulative attention scores above dynamic threshold percentiles, H2O retains critical pivotal tokens and recent sliding-window tokens while safely evicting uninformative middle tokens, preventing out-of-memory crashes.",
+    "metadata": {
+      "category": "llm_systems",
+      "topic": "kv_cache_optimization"
+    }
+  },
+  {
+    "id": "doc_hybrid_rag_01",
+    "text": "Reciprocal Rank Fusion (RRF) is an unsupervised ranking algorithm that merges ranked lists from disparate retrieval mechanisms, such as dense semantic vector search and sparse lexical BM25. By scoring each document as the sum of inverse ranks across methods with a constant k=60, RRF reliably balances exact keyword precision with semantic conceptual recall.",
+    "metadata": {
+      "category": "rag_algorithms",
+      "topic": "reciprocal_rank_fusion"
+    }
+  },
+  {
+    "id": "doc_cross_encoder_02",
+    "text": "Cross-encoder re-ranking passes both query and retrieved passage jointly through multi-layer transformer attention layers. Unlike bi-encoders that encode query and document independently, cross-encoders capture fine-grained token-level cross-attention interactions, boosting top-5 Normalized Discounted Cumulative Gain (NDCG@5) by over 28% and eliminating irrelevant false positives.",
+    "metadata": {
+      "category": "rag_algorithms",
+      "topic": "cross_encoder_reranking"
+    }
+  },
+  {
+    "id": "doc_langgraph_agents_01",
+    "text": "LangGraph models complex multi-agent reasoning as stateful, cyclic computation graphs. Key features include typed state schemas, persistent state checkpoints for time-travel debugging, conditional edge routing, and human-in-the-loop approval gates. Cyclic loops allow agents to reflect on self-generated answers and trigger iterative retrieval upon detecting factual hallucinations.",
+    "metadata": {
+      "category": "agentic_frameworks",
+      "topic": "langgraph_state_machine"
+    }
+  },
+  {
+    "id": "doc_ragas_metrics_01",
+    "text": "Ragas is an automated evaluation framework for Retrieval-Augmented Generation pipelines. Core metrics include Faithfulness (the proportion of factual claims in the generated answer supported by the retrieved context), Context Precision (evaluating whether ground-truth information is ranked at top positions), and Answer Relevance (measuring semantic alignment to the user question).",
+    "metadata": {
+      "category": "evaluation_frameworks",
+      "topic": "ragas_standards"
+    }
+  }
+]

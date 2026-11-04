@@ -1,0 +1,21 @@
+{
+  "total_queries": 520,
+  "faithfulness": 1.0,
+  "context_precision_mrr": 0.894,
+  "context_recall": 0.879,
+  "answer_relevance": 0.343,
+  "hallucination_rate_pct": 0.0,
+  "p50_latency_ms": 1.19,
+  "p95_latency_ms": 1.23,
+  "p99_latency_ms": 1.26,
+  "avg_cost_per_query_usd": 2.9e-05,
+  "token_savings_pct": 80.0,
+  "ablation_results": {
+    "Dense_Only_MRR": 0.5148,
+    "Sparse_BM25_Only_MRR": 0.9663,
+    "Hybrid_RRF_MRR": 0.7336,
+    "SpectraRAG_Final_MRR": 0.8942,
+    "MRR_Improvement_vs_Dense": "+73.7%",
+    "MRR_Improvement_vs_BM25": "+-7.5%"
+  }
+}

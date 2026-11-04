@@ -1,0 +1,4708 @@
+[
+  {
+    "query_id": "q_0001",
+    "query": "Explain in detail: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0002",
+    "query": "Explain in detail: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0003",
+    "query": "Explain in detail: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0004",
+    "query": "Explain in detail: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0005",
+    "query": "Explain in detail: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0006",
+    "query": "Explain in detail: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0007",
+    "query": "Explain in detail: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0008",
+    "query": "Explain in detail: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0009",
+    "query": "Explain in detail: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0010",
+    "query": "Explain in detail: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0011",
+    "query": "Explain in detail: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0012",
+    "query": "Explain in detail: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0013",
+    "query": "Explain in detail: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0014",
+    "query": "Explain in detail: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0015",
+    "query": "Explain in detail: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0016",
+    "query": "Explain in detail: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0017",
+    "query": "Explain in detail: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0018",
+    "query": "Explain in detail: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0019",
+    "query": "Explain in detail: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0020",
+    "query": "Explain in detail: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0021",
+    "query": "Can you clarify: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0022",
+    "query": "Can you clarify: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0023",
+    "query": "Can you clarify: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0024",
+    "query": "Can you clarify: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0025",
+    "query": "Can you clarify: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0026",
+    "query": "Can you clarify: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0027",
+    "query": "Can you clarify: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0028",
+    "query": "Can you clarify: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0029",
+    "query": "Can you clarify: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0030",
+    "query": "Can you clarify: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0031",
+    "query": "Can you clarify: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0032",
+    "query": "Can you clarify: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0033",
+    "query": "Can you clarify: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0034",
+    "query": "Can you clarify: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0035",
+    "query": "Can you clarify: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0036",
+    "query": "Can you clarify: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0037",
+    "query": "Can you clarify: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0038",
+    "query": "Can you clarify: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0039",
+    "query": "Can you clarify: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0040",
+    "query": "Can you clarify: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0041",
+    "query": "Provide exact technical metrics on: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0042",
+    "query": "Provide exact technical metrics on: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0043",
+    "query": "Provide exact technical metrics on: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0044",
+    "query": "Provide exact technical metrics on: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0045",
+    "query": "Provide exact technical metrics on: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0046",
+    "query": "Provide exact technical metrics on: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0047",
+    "query": "Provide exact technical metrics on: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0048",
+    "query": "Provide exact technical metrics on: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0049",
+    "query": "Provide exact technical metrics on: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0050",
+    "query": "Provide exact technical metrics on: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0051",
+    "query": "Provide exact technical metrics on: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0052",
+    "query": "Provide exact technical metrics on: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0053",
+    "query": "Provide exact technical metrics on: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0054",
+    "query": "Provide exact technical metrics on: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0055",
+    "query": "Provide exact technical metrics on: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0056",
+    "query": "Provide exact technical metrics on: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0057",
+    "query": "Provide exact technical metrics on: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0058",
+    "query": "Provide exact technical metrics on: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0059",
+    "query": "Provide exact technical metrics on: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0060",
+    "query": "Provide exact technical metrics on: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0061",
+    "query": "Summarize verified facts regarding: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0062",
+    "query": "Summarize verified facts regarding: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0063",
+    "query": "Summarize verified facts regarding: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0064",
+    "query": "Summarize verified facts regarding: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0065",
+    "query": "Summarize verified facts regarding: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0066",
+    "query": "Summarize verified facts regarding: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0067",
+    "query": "Summarize verified facts regarding: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0068",
+    "query": "Summarize verified facts regarding: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0069",
+    "query": "Summarize verified facts regarding: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0070",
+    "query": "Summarize verified facts regarding: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0071",
+    "query": "Summarize verified facts regarding: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0072",
+    "query": "Summarize verified facts regarding: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0073",
+    "query": "Summarize verified facts regarding: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0074",
+    "query": "Summarize verified facts regarding: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0075",
+    "query": "Summarize verified facts regarding: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0076",
+    "query": "Summarize verified facts regarding: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0077",
+    "query": "Summarize verified facts regarding: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0078",
+    "query": "Summarize verified facts regarding: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0079",
+    "query": "Summarize verified facts regarding: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0080",
+    "query": "Summarize verified facts regarding: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0081",
+    "query": "According to documentation, what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0082",
+    "query": "According to documentation, how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0083",
+    "query": "According to documentation, what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0084",
+    "query": "According to documentation, how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0085",
+    "query": "According to documentation, what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0086",
+    "query": "According to documentation, what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0087",
+    "query": "According to documentation, how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0088",
+    "query": "According to documentation, what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0089",
+    "query": "According to documentation, how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0090",
+    "query": "According to documentation, what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0091",
+    "query": "According to documentation, how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0092",
+    "query": "According to documentation, what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0093",
+    "query": "According to documentation, how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0094",
+    "query": "According to documentation, what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0095",
+    "query": "According to documentation, why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0096",
+    "query": "According to documentation, what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0097",
+    "query": "According to documentation, what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0098",
+    "query": "According to documentation, how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0099",
+    "query": "According to documentation, what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0100",
+    "query": "According to documentation, what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0101",
+    "query": "Compare and outline: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0102",
+    "query": "Compare and outline: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0103",
+    "query": "Compare and outline: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0104",
+    "query": "Compare and outline: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0105",
+    "query": "Compare and outline: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0106",
+    "query": "Compare and outline: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0107",
+    "query": "Compare and outline: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0108",
+    "query": "Compare and outline: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0109",
+    "query": "Compare and outline: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0110",
+    "query": "Compare and outline: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0111",
+    "query": "Compare and outline: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0112",
+    "query": "Compare and outline: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0113",
+    "query": "Compare and outline: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0114",
+    "query": "Compare and outline: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0115",
+    "query": "Compare and outline: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0116",
+    "query": "Compare and outline: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0117",
+    "query": "Compare and outline: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0118",
+    "query": "Compare and outline: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0119",
+    "query": "Compare and outline: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0120",
+    "query": "Compare and outline: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0121",
+    "query": "What are the specifications of: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0122",
+    "query": "What are the specifications of: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0123",
+    "query": "What are the specifications of: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0124",
+    "query": "What are the specifications of: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0125",
+    "query": "What are the specifications of: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0126",
+    "query": "What are the specifications of: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0127",
+    "query": "What are the specifications of: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0128",
+    "query": "What are the specifications of: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0129",
+    "query": "What are the specifications of: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0130",
+    "query": "What are the specifications of: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0131",
+    "query": "What are the specifications of: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0132",
+    "query": "What are the specifications of: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0133",
+    "query": "What are the specifications of: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0134",
+    "query": "What are the specifications of: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0135",
+    "query": "What are the specifications of: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0136",
+    "query": "What are the specifications of: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0137",
+    "query": "What are the specifications of: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0138",
+    "query": "What are the specifications of: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0139",
+    "query": "What are the specifications of: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0140",
+    "query": "What are the specifications of: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0141",
+    "query": "How does the system implement: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0142",
+    "query": "How does the system implement: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0143",
+    "query": "How does the system implement: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0144",
+    "query": "How does the system implement: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0145",
+    "query": "How does the system implement: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0146",
+    "query": "How does the system implement: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0147",
+    "query": "How does the system implement: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0148",
+    "query": "How does the system implement: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0149",
+    "query": "How does the system implement: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0150",
+    "query": "How does the system implement: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0151",
+    "query": "How does the system implement: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0152",
+    "query": "How does the system implement: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0153",
+    "query": "How does the system implement: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0154",
+    "query": "How does the system implement: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0155",
+    "query": "How does the system implement: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0156",
+    "query": "How does the system implement: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0157",
+    "query": "How does the system implement: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0158",
+    "query": "How does the system implement: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0159",
+    "query": "How does the system implement: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0160",
+    "query": "How does the system implement: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0161",
+    "query": "Give a precise breakdown of: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0162",
+    "query": "Give a precise breakdown of: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0163",
+    "query": "Give a precise breakdown of: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0164",
+    "query": "Give a precise breakdown of: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0165",
+    "query": "Give a precise breakdown of: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0166",
+    "query": "Give a precise breakdown of: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0167",
+    "query": "Give a precise breakdown of: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0168",
+    "query": "Give a precise breakdown of: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0169",
+    "query": "Give a precise breakdown of: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0170",
+    "query": "Give a precise breakdown of: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0171",
+    "query": "Give a precise breakdown of: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0172",
+    "query": "Give a precise breakdown of: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0173",
+    "query": "Give a precise breakdown of: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0174",
+    "query": "Give a precise breakdown of: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0175",
+    "query": "Give a precise breakdown of: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0176",
+    "query": "Give a precise breakdown of: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0177",
+    "query": "Give a precise breakdown of: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0178",
+    "query": "Give a precise breakdown of: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0179",
+    "query": "Give a precise breakdown of: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0180",
+    "query": "Give a precise breakdown of: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0181",
+    "query": "What is the measured performance of: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0182",
+    "query": "What is the measured performance of: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0183",
+    "query": "What is the measured performance of: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0184",
+    "query": "What is the measured performance of: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0185",
+    "query": "What is the measured performance of: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0186",
+    "query": "What is the measured performance of: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0187",
+    "query": "What is the measured performance of: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0188",
+    "query": "What is the measured performance of: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0189",
+    "query": "What is the measured performance of: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0190",
+    "query": "What is the measured performance of: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0191",
+    "query": "What is the measured performance of: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0192",
+    "query": "What is the measured performance of: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0193",
+    "query": "What is the measured performance of: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0194",
+    "query": "What is the measured performance of: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0195",
+    "query": "What is the measured performance of: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0196",
+    "query": "What is the measured performance of: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0197",
+    "query": "What is the measured performance of: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0198",
+    "query": "What is the measured performance of: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0199",
+    "query": "What is the measured performance of: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0200",
+    "query": "What is the measured performance of: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0201",
+    "query": "In the context of applied AI, what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0202",
+    "query": "In the context of applied AI, how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0203",
+    "query": "In the context of applied AI, what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0204",
+    "query": "In the context of applied AI, how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0205",
+    "query": "In the context of applied AI, what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0206",
+    "query": "In the context of applied AI, what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0207",
+    "query": "In the context of applied AI, how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0208",
+    "query": "In the context of applied AI, what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0209",
+    "query": "In the context of applied AI, how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0210",
+    "query": "In the context of applied AI, what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0211",
+    "query": "In the context of applied AI, how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0212",
+    "query": "In the context of applied AI, what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0213",
+    "query": "In the context of applied AI, how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0214",
+    "query": "In the context of applied AI, what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0215",
+    "query": "In the context of applied AI, why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0216",
+    "query": "In the context of applied AI, what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0217",
+    "query": "In the context of applied AI, what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0218",
+    "query": "In the context of applied AI, how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0219",
+    "query": "In the context of applied AI, what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0220",
+    "query": "In the context of applied AI, what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0221",
+    "query": "What engineering trade-offs govern: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0222",
+    "query": "What engineering trade-offs govern: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0223",
+    "query": "What engineering trade-offs govern: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0224",
+    "query": "What engineering trade-offs govern: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0225",
+    "query": "What engineering trade-offs govern: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0226",
+    "query": "What engineering trade-offs govern: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0227",
+    "query": "What engineering trade-offs govern: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0228",
+    "query": "What engineering trade-offs govern: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0229",
+    "query": "What engineering trade-offs govern: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0230",
+    "query": "What engineering trade-offs govern: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0231",
+    "query": "What engineering trade-offs govern: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0232",
+    "query": "What engineering trade-offs govern: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0233",
+    "query": "What engineering trade-offs govern: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0234",
+    "query": "What engineering trade-offs govern: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0235",
+    "query": "What engineering trade-offs govern: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0236",
+    "query": "What engineering trade-offs govern: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0237",
+    "query": "What engineering trade-offs govern: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0238",
+    "query": "What engineering trade-offs govern: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0239",
+    "query": "What engineering trade-offs govern: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0240",
+    "query": "What engineering trade-offs govern: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0241",
+    "query": "What are the key architectural components of: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0242",
+    "query": "What are the key architectural components of: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0243",
+    "query": "What are the key architectural components of: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0244",
+    "query": "What are the key architectural components of: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0245",
+    "query": "What are the key architectural components of: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0246",
+    "query": "What are the key architectural components of: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0247",
+    "query": "What are the key architectural components of: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0248",
+    "query": "What are the key architectural components of: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0249",
+    "query": "What are the key architectural components of: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0250",
+    "query": "What are the key architectural components of: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0251",
+    "query": "What are the key architectural components of: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0252",
+    "query": "What are the key architectural components of: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0253",
+    "query": "What are the key architectural components of: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0254",
+    "query": "What are the key architectural components of: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0255",
+    "query": "What are the key architectural components of: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0256",
+    "query": "What are the key architectural components of: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0257",
+    "query": "What are the key architectural components of: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0258",
+    "query": "What are the key architectural components of: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0259",
+    "query": "What are the key architectural components of: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0260",
+    "query": "What are the key architectural components of: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0261",
+    "query": "Walk through the operational pipeline for: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0262",
+    "query": "Walk through the operational pipeline for: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0263",
+    "query": "Walk through the operational pipeline for: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0264",
+    "query": "Walk through the operational pipeline for: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0265",
+    "query": "Walk through the operational pipeline for: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0266",
+    "query": "Walk through the operational pipeline for: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0267",
+    "query": "Walk through the operational pipeline for: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0268",
+    "query": "Walk through the operational pipeline for: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0269",
+    "query": "Walk through the operational pipeline for: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0270",
+    "query": "Walk through the operational pipeline for: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0271",
+    "query": "Walk through the operational pipeline for: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0272",
+    "query": "Walk through the operational pipeline for: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0273",
+    "query": "Walk through the operational pipeline for: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0274",
+    "query": "Walk through the operational pipeline for: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0275",
+    "query": "Walk through the operational pipeline for: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0276",
+    "query": "Walk through the operational pipeline for: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0277",
+    "query": "Walk through the operational pipeline for: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0278",
+    "query": "Walk through the operational pipeline for: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0279",
+    "query": "Walk through the operational pipeline for: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0280",
+    "query": "Walk through the operational pipeline for: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0281",
+    "query": "What benchmarks validate the efficiency of: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0282",
+    "query": "What benchmarks validate the efficiency of: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0283",
+    "query": "What benchmarks validate the efficiency of: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0284",
+    "query": "What benchmarks validate the efficiency of: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0285",
+    "query": "What benchmarks validate the efficiency of: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0286",
+    "query": "What benchmarks validate the efficiency of: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0287",
+    "query": "What benchmarks validate the efficiency of: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0288",
+    "query": "What benchmarks validate the efficiency of: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0289",
+    "query": "What benchmarks validate the efficiency of: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0290",
+    "query": "What benchmarks validate the efficiency of: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0291",
+    "query": "What benchmarks validate the efficiency of: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0292",
+    "query": "What benchmarks validate the efficiency of: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0293",
+    "query": "What benchmarks validate the efficiency of: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0294",
+    "query": "What benchmarks validate the efficiency of: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0295",
+    "query": "What benchmarks validate the efficiency of: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0296",
+    "query": "What benchmarks validate the efficiency of: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0297",
+    "query": "What benchmarks validate the efficiency of: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0298",
+    "query": "What benchmarks validate the efficiency of: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0299",
+    "query": "What benchmarks validate the efficiency of: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0300",
+    "query": "What benchmarks validate the efficiency of: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0301",
+    "query": "Explain how latency is minimized in: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0302",
+    "query": "Explain how latency is minimized in: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0303",
+    "query": "Explain how latency is minimized in: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0304",
+    "query": "Explain how latency is minimized in: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0305",
+    "query": "Explain how latency is minimized in: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0306",
+    "query": "Explain how latency is minimized in: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0307",
+    "query": "Explain how latency is minimized in: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0308",
+    "query": "Explain how latency is minimized in: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0309",
+    "query": "Explain how latency is minimized in: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0310",
+    "query": "Explain how latency is minimized in: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0311",
+    "query": "Explain how latency is minimized in: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0312",
+    "query": "Explain how latency is minimized in: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0313",
+    "query": "Explain how latency is minimized in: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0314",
+    "query": "Explain how latency is minimized in: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0315",
+    "query": "Explain how latency is minimized in: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0316",
+    "query": "Explain how latency is minimized in: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0317",
+    "query": "Explain how latency is minimized in: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0318",
+    "query": "Explain how latency is minimized in: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0319",
+    "query": "Explain how latency is minimized in: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0320",
+    "query": "Explain how latency is minimized in: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0321",
+    "query": "Detail the mathematical basis of: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0322",
+    "query": "Detail the mathematical basis of: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0323",
+    "query": "Detail the mathematical basis of: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0324",
+    "query": "Detail the mathematical basis of: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0325",
+    "query": "Detail the mathematical basis of: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0326",
+    "query": "Detail the mathematical basis of: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0327",
+    "query": "Detail the mathematical basis of: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0328",
+    "query": "Detail the mathematical basis of: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0329",
+    "query": "Detail the mathematical basis of: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0330",
+    "query": "Detail the mathematical basis of: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0331",
+    "query": "Detail the mathematical basis of: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0332",
+    "query": "Detail the mathematical basis of: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0333",
+    "query": "Detail the mathematical basis of: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0334",
+    "query": "Detail the mathematical basis of: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0335",
+    "query": "Detail the mathematical basis of: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0336",
+    "query": "Detail the mathematical basis of: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0337",
+    "query": "Detail the mathematical basis of: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0338",
+    "query": "Detail the mathematical basis of: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0339",
+    "query": "Detail the mathematical basis of: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0340",
+    "query": "Detail the mathematical basis of: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0341",
+    "query": "How does the evaluation harness grade: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0342",
+    "query": "How does the evaluation harness grade: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0343",
+    "query": "How does the evaluation harness grade: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0344",
+    "query": "How does the evaluation harness grade: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0345",
+    "query": "How does the evaluation harness grade: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0346",
+    "query": "How does the evaluation harness grade: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0347",
+    "query": "How does the evaluation harness grade: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0348",
+    "query": "How does the evaluation harness grade: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0349",
+    "query": "How does the evaluation harness grade: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0350",
+    "query": "How does the evaluation harness grade: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0351",
+    "query": "How does the evaluation harness grade: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0352",
+    "query": "How does the evaluation harness grade: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0353",
+    "query": "How does the evaluation harness grade: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0354",
+    "query": "How does the evaluation harness grade: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0355",
+    "query": "How does the evaluation harness grade: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0356",
+    "query": "How does the evaluation harness grade: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0357",
+    "query": "How does the evaluation harness grade: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0358",
+    "query": "How does the evaluation harness grade: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0359",
+    "query": "How does the evaluation harness grade: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0360",
+    "query": "How does the evaluation harness grade: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0361",
+    "query": "Describe the edge deployment strategy for: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0362",
+    "query": "Describe the edge deployment strategy for: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0363",
+    "query": "Describe the edge deployment strategy for: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0364",
+    "query": "Describe the edge deployment strategy for: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0365",
+    "query": "Describe the edge deployment strategy for: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0366",
+    "query": "Describe the edge deployment strategy for: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0367",
+    "query": "Describe the edge deployment strategy for: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0368",
+    "query": "Describe the edge deployment strategy for: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0369",
+    "query": "Describe the edge deployment strategy for: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0370",
+    "query": "Describe the edge deployment strategy for: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0371",
+    "query": "Describe the edge deployment strategy for: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0372",
+    "query": "Describe the edge deployment strategy for: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0373",
+    "query": "Describe the edge deployment strategy for: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0374",
+    "query": "Describe the edge deployment strategy for: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0375",
+    "query": "Describe the edge deployment strategy for: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0376",
+    "query": "Describe the edge deployment strategy for: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0377",
+    "query": "Describe the edge deployment strategy for: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0378",
+    "query": "Describe the edge deployment strategy for: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0379",
+    "query": "Describe the edge deployment strategy for: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0380",
+    "query": "Describe the edge deployment strategy for: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0381",
+    "query": "What are the verification constraints for: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0382",
+    "query": "What are the verification constraints for: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0383",
+    "query": "What are the verification constraints for: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0384",
+    "query": "What are the verification constraints for: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0385",
+    "query": "What are the verification constraints for: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0386",
+    "query": "What are the verification constraints for: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0387",
+    "query": "What are the verification constraints for: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0388",
+    "query": "What are the verification constraints for: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0389",
+    "query": "What are the verification constraints for: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0390",
+    "query": "What are the verification constraints for: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0391",
+    "query": "What are the verification constraints for: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0392",
+    "query": "What are the verification constraints for: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0393",
+    "query": "What are the verification constraints for: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0394",
+    "query": "What are the verification constraints for: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0395",
+    "query": "What are the verification constraints for: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0396",
+    "query": "What are the verification constraints for: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0397",
+    "query": "What are the verification constraints for: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0398",
+    "query": "What are the verification constraints for: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0399",
+    "query": "What are the verification constraints for: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0400",
+    "query": "What are the verification constraints for: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0401",
+    "query": "Show how hybrid retrieval improves: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0402",
+    "query": "Show how hybrid retrieval improves: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0403",
+    "query": "Show how hybrid retrieval improves: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0404",
+    "query": "Show how hybrid retrieval improves: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0405",
+    "query": "Show how hybrid retrieval improves: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0406",
+    "query": "Show how hybrid retrieval improves: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0407",
+    "query": "Show how hybrid retrieval improves: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0408",
+    "query": "Show how hybrid retrieval improves: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0409",
+    "query": "Show how hybrid retrieval improves: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0410",
+    "query": "Show how hybrid retrieval improves: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0411",
+    "query": "Show how hybrid retrieval improves: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0412",
+    "query": "Show how hybrid retrieval improves: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0413",
+    "query": "Show how hybrid retrieval improves: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0414",
+    "query": "Show how hybrid retrieval improves: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0415",
+    "query": "Show how hybrid retrieval improves: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0416",
+    "query": "Show how hybrid retrieval improves: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0417",
+    "query": "Show how hybrid retrieval improves: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0418",
+    "query": "Show how hybrid retrieval improves: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0419",
+    "query": "Show how hybrid retrieval improves: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0420",
+    "query": "Show how hybrid retrieval improves: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0421",
+    "query": "Under what conditions does the agent trigger: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0422",
+    "query": "Under what conditions does the agent trigger: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0423",
+    "query": "Under what conditions does the agent trigger: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0424",
+    "query": "Under what conditions does the agent trigger: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0425",
+    "query": "Under what conditions does the agent trigger: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0426",
+    "query": "Under what conditions does the agent trigger: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0427",
+    "query": "Under what conditions does the agent trigger: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0428",
+    "query": "Under what conditions does the agent trigger: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0429",
+    "query": "Under what conditions does the agent trigger: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0430",
+    "query": "Under what conditions does the agent trigger: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0431",
+    "query": "Under what conditions does the agent trigger: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0432",
+    "query": "Under what conditions does the agent trigger: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0433",
+    "query": "Under what conditions does the agent trigger: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0434",
+    "query": "Under what conditions does the agent trigger: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0435",
+    "query": "Under what conditions does the agent trigger: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0436",
+    "query": "Under what conditions does the agent trigger: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0437",
+    "query": "Under what conditions does the agent trigger: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0438",
+    "query": "Under what conditions does the agent trigger: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0439",
+    "query": "Under what conditions does the agent trigger: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0440",
+    "query": "Under what conditions does the agent trigger: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0441",
+    "query": "Highlight the reduction in error rates for: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0442",
+    "query": "Highlight the reduction in error rates for: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0443",
+    "query": "Highlight the reduction in error rates for: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0444",
+    "query": "Highlight the reduction in error rates for: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0445",
+    "query": "Highlight the reduction in error rates for: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0446",
+    "query": "Highlight the reduction in error rates for: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0447",
+    "query": "Highlight the reduction in error rates for: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0448",
+    "query": "Highlight the reduction in error rates for: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0449",
+    "query": "Highlight the reduction in error rates for: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0450",
+    "query": "Highlight the reduction in error rates for: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0451",
+    "query": "Highlight the reduction in error rates for: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0452",
+    "query": "Highlight the reduction in error rates for: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0453",
+    "query": "Highlight the reduction in error rates for: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0454",
+    "query": "Highlight the reduction in error rates for: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0455",
+    "query": "Highlight the reduction in error rates for: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0456",
+    "query": "Highlight the reduction in error rates for: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0457",
+    "query": "Highlight the reduction in error rates for: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0458",
+    "query": "Highlight the reduction in error rates for: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0459",
+    "query": "Highlight the reduction in error rates for: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0460",
+    "query": "Highlight the reduction in error rates for: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0461",
+    "query": "What is the empirical impact of: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0462",
+    "query": "What is the empirical impact of: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0463",
+    "query": "What is the empirical impact of: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0464",
+    "query": "What is the empirical impact of: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0465",
+    "query": "What is the empirical impact of: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0466",
+    "query": "What is the empirical impact of: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0467",
+    "query": "What is the empirical impact of: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0468",
+    "query": "What is the empirical impact of: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0469",
+    "query": "What is the empirical impact of: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0470",
+    "query": "What is the empirical impact of: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0471",
+    "query": "What is the empirical impact of: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0472",
+    "query": "What is the empirical impact of: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0473",
+    "query": "What is the empirical impact of: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0474",
+    "query": "What is the empirical impact of: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0475",
+    "query": "What is the empirical impact of: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0476",
+    "query": "What is the empirical impact of: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0477",
+    "query": "What is the empirical impact of: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0478",
+    "query": "What is the empirical impact of: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0479",
+    "query": "What is the empirical impact of: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0480",
+    "query": "What is the empirical impact of: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0481",
+    "query": "How does the system prevent hallucinations in: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0482",
+    "query": "How does the system prevent hallucinations in: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0483",
+    "query": "How does the system prevent hallucinations in: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0484",
+    "query": "How does the system prevent hallucinations in: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0485",
+    "query": "How does the system prevent hallucinations in: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0486",
+    "query": "How does the system prevent hallucinations in: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0487",
+    "query": "How does the system prevent hallucinations in: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0488",
+    "query": "How does the system prevent hallucinations in: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0489",
+    "query": "How does the system prevent hallucinations in: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0490",
+    "query": "How does the system prevent hallucinations in: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0491",
+    "query": "How does the system prevent hallucinations in: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0492",
+    "query": "How does the system prevent hallucinations in: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0493",
+    "query": "How does the system prevent hallucinations in: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0494",
+    "query": "How does the system prevent hallucinations in: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0495",
+    "query": "How does the system prevent hallucinations in: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0496",
+    "query": "How does the system prevent hallucinations in: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0497",
+    "query": "How does the system prevent hallucinations in: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0498",
+    "query": "How does the system prevent hallucinations in: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0499",
+    "query": "How does the system prevent hallucinations in: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0500",
+    "query": "How does the system prevent hallucinations in: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0501",
+    "query": "Outline the step-by-step state machine for: what display technology and latency does DefXV AR glasses use for speech-to-text?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0502",
+    "query": "Outline the step-by-step state machine for: how does DefXV isolate speaker audio in noisy environments?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_01"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0503",
+    "query": "Outline the step-by-step state machine for: what gesture recognition framerate and model does DefXV utilize for sign language?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0504",
+    "query": "Outline the step-by-step state machine for: how does DefXV enable two-way communication for deaf individuals without internet?",
+    "ground_truth_doc_ids": [
+      "doc_assistive_defxv_02"
+    ],
+    "category": "assistive_tech",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0505",
+    "query": "Outline the step-by-step state machine for: what technologies power the DeskAVR metahuman interview simulator avatar engine?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0506",
+    "query": "Outline the step-by-step state machine for: what aspects of candidate performance does DeskAVR evaluate during practice sessions?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_metahuman_01",
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0507",
+    "query": "Outline the step-by-step state machine for: how does DeskAVR use LangGraph multi-agent workflows to grade candidate responses?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0508",
+    "query": "Outline the step-by-step state machine for: what diagnostic feedback and reporting turnaround does DeskAVR provide post-interview?",
+    "ground_truth_doc_ids": [
+      "doc_deskavr_eval_02"
+    ],
+    "category": "interview_simulation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0509",
+    "query": "Outline the step-by-step state machine for: how does speculative decoding accelerate LLM inference without losing distribution quality?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0510",
+    "query": "Outline the step-by-step state machine for: what speedup ratio does Medusa tree-attention achieve in speculative decoding?",
+    "ground_truth_doc_ids": [
+      "doc_llm_speculative_01"
+    ],
+    "category": "llm_systems",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0511",
+    "query": "Outline the step-by-step state machine for: how does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0512",
+    "query": "Outline the step-by-step state machine for: what percentage of KV-cache memory does H2O eviction save during long-context generation?",
+    "ground_truth_doc_ids": [
+      "doc_llm_kv_cache_02"
+    ],
+    "category": "llm_systems",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0513",
+    "query": "Outline the step-by-step state machine for: how does Reciprocal Rank Fusion (RRF) fuse dense and sparse search rankings?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0514",
+    "query": "Outline the step-by-step state machine for: what is the standard smoothing constant k used in Reciprocal Rank Fusion formulas?",
+    "ground_truth_doc_ids": [
+      "doc_hybrid_rag_01"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0515",
+    "query": "Outline the step-by-step state machine for: why are cross-encoders more accurate than bi-encoders for passage re-ranking?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0516",
+    "query": "Outline the step-by-step state machine for: what percentage boost in NDCG@5 does cross-encoder re-ranking deliver?",
+    "ground_truth_doc_ids": [
+      "doc_cross_encoder_02"
+    ],
+    "category": "rag_algorithms",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0517",
+    "query": "Outline the step-by-step state machine for: what are the core capabilities of LangGraph for stateful agentic workflows?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q_0518",
+    "query": "Outline the step-by-step state machine for: how do cyclic loops in LangGraph enable self-correction of hallucinations?",
+    "ground_truth_doc_ids": [
+      "doc_langgraph_agents_01"
+    ],
+    "category": "agentic_frameworks",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q_0519",
+    "query": "Outline the step-by-step state machine for: what does the Faithfulness metric measure in the Ragas evaluation framework?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q_0520",
+    "query": "Outline the step-by-step state machine for: what is the difference between Context Precision and Context Recall in Ragas?",
+    "ground_truth_doc_ids": [
+      "doc_ragas_metrics_01"
+    ],
+    "category": "evaluation_frameworks",
+    "difficulty": "medium"
+  }
+]

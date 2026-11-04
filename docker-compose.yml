@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  spectrarag:
+    build: .
+    container_name: spectrarag-agent
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+    volumes:
+      - ./data_store:/app/data_store
+    restart: unless-stopped
