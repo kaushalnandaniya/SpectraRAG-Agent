@@ -224,3 +224,4 @@ class SpectraAgentNodes:
             "status": "fallback_resolved",
             "trace_steps": trace,
         }
+

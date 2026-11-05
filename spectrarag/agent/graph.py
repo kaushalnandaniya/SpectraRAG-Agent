@@ -130,3 +130,4 @@ class SpectraAgentEngine:
             trace_id=trace_id,
             agent_steps=final_state.get("trace_steps", []),
         )
+

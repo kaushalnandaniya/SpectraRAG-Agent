@@ -12,3 +12,4 @@ services:
     volumes:
       - ./data_store:/app/data_store
     restart: unless-stopped
+

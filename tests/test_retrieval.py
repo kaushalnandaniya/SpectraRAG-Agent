@@ -51,3 +51,4 @@ def test_hybrid_rrf_fusion(indexed_retrievers):
     assert top_res.rrf_score is not None
     assert top_res.rrf_score > 0.0
     assert "speculative" in top_res.text.lower()
+

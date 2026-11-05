@@ -26,3 +26,4 @@ def test_reranker_scoring_and_pruning():
     top_ids = [r.chunk_id for r in reranked]
     assert "c1" not in top_ids or reranked[0].chunk_id != "c1"
     assert reranked[0].rerank_score is not None
+

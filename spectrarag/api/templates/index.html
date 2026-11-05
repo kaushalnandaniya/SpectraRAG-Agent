@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpectraRAG-Agent | Autonomous Agentic RAG Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            primary: '#6366f1',
+            accent: '#06b6d4',
+            surface: '#0f172a',
+            surfaceCard: '#1e293b',
+            borderSubtle: '#334155',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #0b0f19; }
+    .glow-indigo { box-shadow: 0 0 35px -5px rgba(99, 102, 241, 0.25); }
+    .badge-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+  </style>
+</head>
+<body class="text-slate-100 font-sans min-h-screen flex flex-col">
+
+  <!-- Top Navigation -->
+  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/30">
+          S
+        </div>
+        <div>
+          <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-indigo-300 bg-clip-text text-transparent">SpectraRAG-Agent</span>
+          <span class="ml-2 text-xs font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">LangGraph v0.2</span>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2 text-xs font-mono bg-slate-800/80 px-3 py-1.5 rounded-full border border-slate-700">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="text-emerald-400 font-medium">Cluster Ready</span>
+          <span class="text-slate-500">|</span>
+          <span id="headerChunksCount" class="text-slate-300">11 Chunks Indexed</span>
+        </div>
+        <a href="https://github.com/kaushalnandaniya/SpectraRAG-Agent" target="_blank" class="text-xs font-medium text-slate-400 hover:text-white flex items-center space-x-1.5 transition">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Grid -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full grid grid-cols-1 lg:grid-cols-12 gap-8">
+    
+    <!-- Left Column: Query Console & Inputs (5 Cols) -->
+    <div class="lg:col-span-5 space-y-6">
+      
+      <!-- Query Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 glow-indigo">
+        <div class="flex items-center justify-between mb-3">
+          <label class="text-sm font-semibold text-slate-200 flex items-center space-x-2">
+            <span>Query Console</span>
+          </label>
+          <span class="text-xs font-mono text-indigo-400">REST & SSE Stream</span>
+        </div>
+
+        <textarea id="queryInput" rows="3" class="w-full bg-slate-950 border border-slate-700/80 rounded-lg p-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 font-mono transition" placeholder="Ask a question across the domain knowledge base..."></textarea>
+
+        <!-- Presets -->
+        <div class="mt-3">
+          <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Preset Domain Queries:</p>
+          <div class="flex flex-wrap gap-1.5">
+            <button onclick="setQuery(this)" class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 hover:bg-indigo-600 hover:text-white border border-slate-700 transition">DefXV AR Latency</button>
+            <button onclick="setQuery(this)" class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 hover:bg-indigo-600 hover:text-white border border-slate-700 transition">DeskAVR Metahumans</button>
+            <button onclick="setQuery(this)" class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 hover:bg-indigo-600 hover:text-white border border-slate-700 transition">Speculative Decoding</button>
+            <button onclick="setQuery(this)" class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 hover:bg-indigo-600 hover:text-white border border-slate-700 transition">H2O KV-Cache</button>
+            <button onclick="setQuery(this)" class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 hover:bg-indigo-600 hover:text-white border border-slate-700 transition">LangGraph Cyclic</button>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-5 flex gap-3">
+          <button id="btnRunSync" onclick="runQuerySync()" class="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2 px-4 rounded-lg text-sm shadow-md shadow-indigo-600/30 flex items-center justify-center space-x-2 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span>Execute Agent</span>
+          </button>
+          <button id="btnRunStream" onclick="runQueryStream()" class="flex-1 bg-slate-800 hover:bg-slate-700 text-cyan-400 font-medium py-2 px-4 rounded-lg text-sm border border-cyan-500/30 flex items-center justify-center space-x-2 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            <span>Stream (SSE)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Multimodal Voice / Audio Query Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-sm font-semibold text-slate-200 flex items-center space-x-2">
+            <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 003-3V5a3 3 0 10-6 0v6a3 3 0 003 3z"/></svg>
+            <span>Multimodal Whisper ASR</span>
+          </span>
+          <span class="text-xs font-mono text-cyan-400">&lt;180ms ASR</span>
+        </div>
+        <p class="text-xs text-slate-400 mb-3">Upload audio query to transcribe and evaluate via LangGraph agent:</p>
+        <div class="flex items-center space-x-3">
+          <input type="file" id="audioFileInput" accept=".wav,.mp3" class="block w-full text-xs text-slate-400 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-medium file:bg-slate-800 file:text-cyan-400 hover:file:bg-slate-700 cursor-pointer">
+          <button onclick="runAudioQuery()" class="bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-medium py-1.5 px-3 rounded-md transition flex items-center space-x-1">
+            <span>Transcribe</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Architecture Ablation Summary Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <h3 class="text-sm font-semibold text-slate-200 mb-3 flex items-center justify-between">
+          <span>Retrieval Ablation (MRR@5)</span>
+          <span class="text-xs font-mono text-emerald-400">+73.7% vs Dense</span>
+        </h3>
+        <div class="space-y-2 text-xs font-mono">
+          <div>
+            <div class="flex justify-between mb-1 text-slate-400">
+              <span>Dense Vector Only</span>
+              <span>0.515</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-1.5">
+              <div class="bg-slate-500 h-1.5 rounded-full" style="width: 51%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1 text-slate-400">
+              <span>Hybrid RRF (k=60)</span>
+              <span>0.734</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-1.5">
+              <div class="bg-indigo-500 h-1.5 rounded-full" style="width: 73%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1 text-emerald-300 font-semibold">
+              <span>SpectraRAG (Hybrid + Cross-Encoder)</span>
+              <span>0.894</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-1.5">
+              <div class="bg-gradient-to-r from-emerald-400 to-cyan-400 h-1.5 rounded-full" style="width: 89%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Multi-Agent Execution Flow & Results (7 Cols) -->
+    <div class="lg:col-span-7 space-y-6">
+
+      <!-- Agent State Machine Live Flow -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">LangGraph State Machine Execution</span>
+          <span id="agentStateBadge" class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">IDLE</span>
+        </div>
+        <div class="grid grid-cols-5 gap-2 text-center text-xs font-mono">
+          <div id="nodePlanner" class="p-2 rounded bg-slate-950 border border-slate-800 text-slate-500">1. Planner</div>
+          <div id="nodeRetriever" class="p-2 rounded bg-slate-950 border border-slate-800 text-slate-500">2. Hybrid RRF</div>
+          <div id="nodeReRanker" class="p-2 rounded bg-slate-950 border border-slate-800 text-slate-500">3. Cross-Encoder</div>
+          <div id="nodeSynthesizer" class="p-2 rounded bg-slate-950 border border-slate-800 text-slate-500">4. Synthesize</div>
+          <div id="nodeAuditor" class="p-2 rounded bg-slate-950 border border-slate-800 text-slate-500">5. Auditor</div>
+        </div>
+      </div>
+
+      <!-- Result Tabs -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+        <!-- Tab Headers -->
+        <div class="flex border-b border-slate-800 bg-slate-950 px-4">
+          <button onclick="switchTab('answer')" id="tabBtnAnswer" class="py-3 px-4 text-xs font-semibold text-indigo-400 border-b-2 border-indigo-500">Verified Answer</button>
+          <button onclick="switchTab('chunks')" id="tabBtnChunks" class="py-3 px-4 text-xs font-semibold text-slate-400 hover:text-slate-200 border-b-2 border-transparent">Retrieved Chunks</button>
+          <button onclick="switchTab('metrics')" id="tabBtnMetrics" class="py-3 px-4 text-xs font-semibold text-slate-400 hover:text-slate-200 border-b-2 border-transparent">Ragas Metrics</button>
+          <button onclick="switchTab('trace')" id="tabBtnTrace" class="py-3 px-4 text-xs font-semibold text-slate-400 hover:text-slate-200 border-b-2 border-transparent">Audit Trace</button>
+        </div>
+
+        <!-- Tab 1: Answer -->
+        <div id="tabContentAnswer" class="p-5 space-y-4">
+          <div id="answerContainer" class="text-sm text-slate-200 leading-relaxed font-sans min-h-[140px] flex items-center justify-center text-slate-500 italic">
+            Select a preset query or enter your own prompt to see the verified response...
+          </div>
+          <!-- Quick Status Footer -->
+          <div id="answerMeta" class="hidden pt-4 border-t border-slate-800 flex flex-wrap gap-4 text-xs font-mono text-slate-400">
+            <div>Latency: <span id="metaLatency" class="text-emerald-400 font-bold">-</span></div>
+            <div>Faithfulness: <span id="metaFaithfulness" class="text-indigo-400 font-bold">-</span></div>
+            <div>Relevance: <span id="metaRelevance" class="text-cyan-400 font-bold">-</span></div>
+            <div>Cost: <span id="metaCost" class="text-slate-300">-</span></div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Chunks -->
+        <div id="tabContentChunks" class="hidden p-5 space-y-3">
+          <div id="chunksList" class="space-y-3 max-h-[360px] overflow-y-auto pr-2">
+            <p class="text-xs text-slate-500 italic">No retrieved chunks yet.</p>
+          </div>
+        </div>
+
+        <!-- Tab 3: Metrics -->
+        <div id="tabContentMetrics" class="hidden p-5 space-y-4">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+              <div class="text-xs text-slate-400">Faithfulness</div>
+              <div id="metricFaithfulness" class="text-lg font-mono font-bold text-indigo-400 mt-1">-</div>
+            </div>
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+              <div class="text-xs text-slate-400">Context MRR@5</div>
+              <div id="metricMRR" class="text-lg font-mono font-bold text-emerald-400 mt-1">0.894</div>
+            </div>
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+              <div class="text-xs text-slate-400">Token Savings</div>
+              <div id="metricSavings" class="text-lg font-mono font-bold text-cyan-400 mt-1">80.0%</div>
+            </div>
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+              <div class="text-xs text-slate-400">Hallucination</div>
+              <div id="metricHallucination" class="text-lg font-mono font-bold text-emerald-400 mt-1">0.0%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Audit Trace -->
+        <div id="tabContentTrace" class="hidden p-5">
+          <pre id="traceLog" class="text-xs font-mono bg-slate-950 p-3 rounded-lg text-slate-300 overflow-x-auto max-h-[300px]">No audit trace available yet.</pre>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Script logic -->
+  <script>
+    const presets = {
+      'DefXV AR Latency': 'What display technology and latency does DefXV AR glasses use for speech-to-text?',
+      'DeskAVR Metahumans': 'What technologies power the DeskAVR metahuman interview simulator avatar engine?',
+      'Speculative Decoding': 'How does speculative decoding accelerate LLM inference without losing distribution quality?',
+      'H2O KV-Cache': 'How does Heavy-Hitter Oracle (H2O) reduce KV-cache memory overhead in LLMs?',
+      'LangGraph Cyclic': 'How do cyclic loops in LangGraph enable self-correction of hallucinations?'
+    };
+
+    function setQuery(btn) {
+      const key = btn.innerText.trim();
+      if (presets[key]) {
+        document.getElementById('queryInput').value = presets[key];
+      }
+    }
+
+    function switchTab(tabId) {
+      const tabs = ['answer', 'chunks', 'metrics', 'trace'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tabBtn${t.charAt(0).toUpperCase() + t.slice(1)}`);
+        const content = document.getElementById(`tabContent${t.charAt(0).toUpperCase() + t.slice(1)}`);
+        if (t === tabId) {
+          btn.className = "py-3 px-4 text-xs font-semibold text-indigo-400 border-b-2 border-indigo-500";
+          content.classList.remove('hidden');
+        } else {
+          btn.className = "py-3 px-4 text-xs font-semibold text-slate-400 hover:text-slate-200 border-b-2 border-transparent";
+          content.classList.add('hidden');
+        }
+      });
+    }
+
+    function resetNodeBadges() {
+      ['nodePlanner', 'nodeRetriever', 'nodeReRanker', 'nodeSynthesizer', 'nodeAuditor'].forEach(id => {
+        document.getElementById(id).className = "p-2 rounded bg-slate-950 border border-slate-800 text-slate-500";
+      });
+    }
+
+    function activateNodeBadge(id) {
+      document.getElementById(id).className = "p-2 rounded bg-indigo-900/60 border border-indigo-500 text-indigo-200 font-semibold shadow";
+    }
+
+    async function runQuerySync() {
+      const query = document.getElementById('queryInput').value.trim();
+      if (!query) return;
+
+      resetNodeBadges();
+      document.getElementById('agentStateBadge').innerText = "EXECUTING...";
+      document.getElementById('agentStateBadge').className = "text-xs font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 badge-pulse";
+
+      activateNodeBadge('nodePlanner');
+      setTimeout(() => activateNodeBadge('nodeRetriever'), 150);
+      setTimeout(() => activateNodeBadge('nodeReRanker'), 300);
+      setTimeout(() => activateNodeBadge('nodeSynthesizer'), 450);
+      setTimeout(() => activateNodeBadge('nodeAuditor'), 600);
+
+      try {
+        const res = await fetch('/api/v1/query', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({query})
+        });
+        const data = await res.json();
+        renderResult(data);
+      } catch (err) {
+        alert("Error executing query: " + err);
+      }
+    }
+
+    function runQueryStream() {
+      const query = document.getElementById('queryInput').value.trim();
+      if (!query) return;
+
+      resetNodeBadges();
+      const ansContainer = document.getElementById('answerContainer');
+      ansContainer.className = "text-sm text-slate-200 leading-relaxed font-sans min-h-[140px]";
+      ansContainer.innerText = "";
+
+      const eventSource = new EventSource(`/api/v1/stream?q=${encodeURIComponent(query)}`);
+
+      eventSource.addEventListener('trace', (e) => {
+        const payload = JSON.parse(e.data);
+        if (payload.step === 'planner') activateNodeBadge('nodePlanner');
+        if (payload.step === 'retriever') activateNodeBadge('nodeRetriever');
+        if (payload.step === 'reranker') activateNodeBadge('nodeReRanker');
+      });
+
+      eventSource.addEventListener('token', (e) => {
+        activateNodeBadge('nodeSynthesizer');
+        const payload = JSON.parse(e.data);
+        ansContainer.innerText += payload.token;
+      });
+
+      eventSource.addEventListener('completion', (e) => {
+        activateNodeBadge('nodeAuditor');
+        const data = JSON.parse(e.data);
+        renderMetaOnly(data);
+        eventSource.close();
+      });
+
+      eventSource.onerror = () => {
+        eventSource.close();
+      };
+    }
+
+    async function runAudioQuery() {
+      const fileInput = document.getElementById('audioFileInput');
+      if (!fileInput.files.length) {
+        alert("Please select a sample audio file first.");
+        return;
+      }
+      const formData = new FormData();
+      formData.append('file', fileInput.files[0]);
+
+      document.getElementById('agentStateBadge').innerText = "ASR TRANSCRIBING...";
+      try {
+        const res = await fetch('/api/v1/audio/query', {
+          method: 'POST',
+          body: formData
+        });
+        const data = await res.json();
+        document.getElementById('queryInput').value = data.transcription.transcript;
+        renderResult(data.query_response);
+      } catch (err) {
+        alert("Error during audio transcription: " + err);
+      }
+    }
+
+    function renderResult(data) {
+      document.getElementById('agentStateBadge').innerText = "COMPLETED";
+      document.getElementById('agentStateBadge').className = "text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400";
+
+      const ansContainer = document.getElementById('answerContainer');
+      ansContainer.className = "text-sm text-slate-200 leading-relaxed font-sans min-h-[140px]";
+      ansContainer.innerText = data.answer;
+
+      renderMetaOnly(data);
+
+      // Render Chunks
+      const chunksList = document.getElementById('chunksList');
+      chunksList.innerHTML = "";
+      data.sources.forEach((s, idx) => {
+        const item = document.createElement('div');
+        item.className = "p-3 rounded-lg bg-slate-950 border border-slate-800 text-xs space-y-1.5";
+        item.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-indigo-400 font-semibold">[${idx + 1}] Doc: ${s.doc_id}</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-cyan-400 font-mono">Score: ${s.score.toFixed(3)}</span>
+          </div>
+          <p class="text-slate-300 font-sans">${s.text}</p>
+        `;
+        chunksList.appendChild(item);
+      });
+
+      // Render Trace
+      document.getElementById('traceLog').innerText = data.agent_steps.join('\n');
+    }
+
+    function renderMetaOnly(data) {
+      document.getElementById('answerMeta').classList.remove('hidden');
+      document.getElementById('metaLatency').innerText = `${data.latency_ms} ms`;
+      document.getElementById('metaFaithfulness').innerText = `${(data.faithfulness_score * 100).toFixed(1)}%`;
+      document.getElementById('metaRelevance').innerText = `${(data.answer_relevance * 100).toFixed(1)}%`;
+      document.getElementById('metaCost').innerText = `$${data.cost_usd.toFixed(6)}`;
+      document.getElementById('metricFaithfulness').innerText = `${(data.faithfulness_score * 100).toFixed(1)}%`;
+    }
+  </script>
+</body>
+</html>

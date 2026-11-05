@@ -109,3 +109,4 @@ class SemanticChunker:
         for doc in documents:
             all_chunks.extend(self.chunk_document(doc))
         return all_chunks
+

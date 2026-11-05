@@ -40,3 +40,4 @@ def test_answer_relevance():
     ans = "The latency of DefXV is sub-18 milliseconds."
     rel = calculate_answer_relevance(query, ans)
     assert rel >= 0.70
+

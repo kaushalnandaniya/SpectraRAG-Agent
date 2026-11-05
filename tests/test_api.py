@@ -41,3 +41,23 @@ def test_ingest_and_query_endpoints(client):
     assert "answer" in data
     assert len(data["sources"]) > 0
     assert "latency_ms" in data
+
+
+def test_dashboard_ui_endpoint(client):
+    res = client.get("/")
+    assert res.status_code == 200
+    assert "SpectraRAG-Agent" in res.text
+    assert "LangGraph" in res.text
+
+
+def test_audio_query_endpoint(client):
+    dummy_wav = b"RIFF" + b"\x00" * 8000
+    files = {"file": ("test.wav", dummy_wav, "audio/wav")}
+    res = client.post("/api/v1/audio/query", files=files)
+    assert res.status_code == 200
+    data = res.json()
+    assert "transcription" in data
+    assert "query_response" in data
+    assert data["transcription"]["confidence"] > 0.90
+
+

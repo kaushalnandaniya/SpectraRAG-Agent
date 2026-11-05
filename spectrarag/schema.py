@@ -90,3 +90,4 @@ class BenchmarkSummary(BaseModel):
     avg_cost_per_query_usd: float
     token_savings_pct: float
     ablation_results: Dict[str, Any] = Field(default_factory=dict)
+

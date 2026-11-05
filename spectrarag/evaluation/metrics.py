@@ -78,3 +78,4 @@ def calculate_answer_relevance(query: str, answer: str) -> float:
     ans_clean = answer.lower()
     matches = sum(1 for t in q_tokens if t in ans_clean)
     return round(min(1.0, (matches + 0.5) / len(q_tokens)), 3)
+

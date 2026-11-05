@@ -41,3 +41,4 @@ def test_chunking_batch():
     assert len(chunks) >= 2
     doc_ids = set(c.doc_id for c in chunks)
     assert "d1" in doc_ids and "d2" in doc_ids
+

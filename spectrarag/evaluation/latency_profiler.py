@@ -36,3 +36,4 @@ class LatencyProfiler:
             "std": round(float(np.std(arr)), 2),
             "count": len(arr),
         }
+

@@ -4,7 +4,7 @@ import asyncio
 import json
 import time
 from typing import Dict, Any, AsyncGenerator
-from fastapi import APIRouter, HTTPException, Query, status
+from fastapi import APIRouter, HTTPException, Query, status, UploadFile, File
 from fastapi.responses import StreamingResponse
 
 from spectrarag.schema import (
@@ -19,6 +19,7 @@ from spectrarag.chunking.semantic_chunker import SemanticChunker
 from spectrarag.retrieval.hybrid_retriever import HybridRetriever
 from spectrarag.retrieval.reranker import CrossEncoderReranker
 from spectrarag.evaluation.benchmark_runner import BenchmarkRunner
+from spectrarag.multimodal.audio_transcriber import WhisperAudioTranscriber
 
 router = APIRouter(prefix="/api/v1", tags=["SpectraRAG Engine"])
 
@@ -28,6 +29,7 @@ _retriever = HybridRetriever()
 _reranker = CrossEncoderReranker()
 _agent_engine = SpectraAgentEngine(retriever=_retriever, reranker=_reranker)
 _benchmark_runner = BenchmarkRunner()
+_audio_transcriber = WhisperAudioTranscriber()
 
 
 def get_agent_engine() -> SpectraAgentEngine:
@@ -113,3 +115,23 @@ async def stream_query(q: str = Query(..., description="User query text")):
 def run_evaluation(sample_size: int = Query(50, description="Number of queries to benchmark")):
     """Runs automated benchmark evaluation on a subset or full test set."""
     return _benchmark_runner.run_benchmark(max_queries=sample_size)
+
+
+@router.post("/audio/query")
+async def audio_query(file: UploadFile = File(...)):
+    """Transcribes conversational audio stream via Whisper and executes multi-agent RAG workflow."""
+    if not file:
+        raise HTTPException(status_code=400, detail="No audio file uploaded.")
+    content = await file.read()
+    if not content:
+        raise HTTPException(status_code=400, detail="Empty audio content.")
+
+    trans_res = _audio_transcriber.transcribe_bytes(content, filename=file.filename or "query.wav")
+    rag_res = _agent_engine.execute(trans_res.transcript)
+
+    return {
+        "transcription": trans_res.model_dump(),
+        "query_response": rag_res.model_dump(),
+    }
+
+

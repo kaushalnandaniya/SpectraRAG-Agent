@@ -140,3 +140,4 @@ class DenseVectorIndex:
         if self.chunks:
             embs = [np.array(c.embedding, dtype=np.float32) for c in self.chunks]
             self.embeddings_matrix = np.vstack(embs)
+

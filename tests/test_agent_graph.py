@@ -52,3 +52,4 @@ def test_agent_execution_trace(agent_engine):
     assert "[ReRanker]" in trace_text
     assert "[Synthesizer]" in trace_text
     assert "[Auditor]" in trace_text
+

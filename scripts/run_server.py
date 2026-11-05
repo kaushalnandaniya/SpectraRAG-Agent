@@ -12,3 +12,4 @@ if __name__ == "__main__":
     port = int(os.getenv("PORT", "8000"))
     print(f"[*] Launching SpectraRAG-Agent API server at http://{host}:{port}")
     uvicorn.run("spectrarag.api.app:app", host=host, port=port, reload=False)
+

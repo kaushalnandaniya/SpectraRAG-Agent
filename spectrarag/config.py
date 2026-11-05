@@ -36,3 +36,4 @@ class SpectraConfig:
 
 
 default_config = SpectraConfig()
+
