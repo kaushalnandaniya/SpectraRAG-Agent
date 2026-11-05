@@ -43,6 +43,7 @@ class QueryRequest(BaseModel):
     top_k: int = 5
     enable_reranking: bool = True
     enable_reflection: bool = True
+    human_guidance: Optional[str] = None
     filters: Optional[Dict[str, Any]] = None
 
 

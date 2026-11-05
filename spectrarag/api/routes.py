@@ -75,6 +75,7 @@ def query_agent(payload: QueryRequest):
 
     return _agent_engine.execute(
         query=payload.query,
+        human_guidance=payload.human_guidance,
         filters=payload.filters,
     )
 

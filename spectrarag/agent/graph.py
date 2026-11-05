@@ -9,6 +9,7 @@ from spectrarag.agent.state import AgentState
 from spectrarag.agent.nodes import SpectraAgentNodes
 from spectrarag.retrieval.hybrid_retriever import HybridRetriever
 from spectrarag.retrieval.reranker import CrossEncoderReranker
+from spectrarag.tools.registry import ToolRegistry
 from spectrarag.schema import QueryResponse
 from spectrarag.config import default_config, SpectraConfig
 
@@ -34,6 +35,7 @@ class SpectraAgentEngine:
         self,
         retriever: HybridRetriever,
         reranker: Optional[CrossEncoderReranker] = None,
+        tools: Optional[ToolRegistry] = None,
         config: SpectraConfig = default_config,
     ):
         self.retriever = retriever
@@ -41,10 +43,12 @@ class SpectraAgentEngine:
             top_k=config.rerank_top_k,
             confidence_threshold=config.rerank_threshold,
         )
+        self.tools = tools or ToolRegistry()
         self.config = config
         self.nodes = SpectraAgentNodes(
             retriever=self.retriever,
             reranker=self.reranker,
+            tools=self.tools,
             config=self.config,
         )
         self.graph = self._compile_graph()
@@ -57,6 +61,7 @@ class SpectraAgentEngine:
         workflow.add_node("planner", self.nodes.planner_node)
         workflow.add_node("retriever", self.nodes.retriever_node)
         workflow.add_node("reranker", self.nodes.reranker_node)
+        workflow.add_node("tool_executor", self.nodes.tool_executor_node)
         workflow.add_node("synthesizer", self.nodes.synthesizer_node)
         workflow.add_node("auditor", self.nodes.hallucination_auditor_node)
         workflow.add_node("fallback", self.nodes.fallback_node)
@@ -65,7 +70,8 @@ class SpectraAgentEngine:
         workflow.add_edge(START, "planner")
         workflow.add_edge("planner", "retriever")
         workflow.add_edge("retriever", "reranker")
-        workflow.add_edge("reranker", "synthesizer")
+        workflow.add_edge("reranker", "tool_executor")
+        workflow.add_edge("tool_executor", "synthesizer")
         workflow.add_edge("synthesizer", "auditor")
 
         # Conditional reflection / self-correction edge
@@ -86,6 +92,7 @@ class SpectraAgentEngine:
         self,
         query: str,
         max_retries: Optional[int] = None,
+        human_guidance: Optional[str] = None,
         filters: Optional[Dict[str, Any]] = None,
     ) -> QueryResponse:
         """Executes full agentic graph and returns structured QueryResponse."""
@@ -97,6 +104,7 @@ class SpectraAgentEngine:
             "cleaned_query": query,
             "intent": "unknown",
             "sub_queries": [query],
+            "expanded_queries": [query],
             "retrieved_docs": [],
             "reranked_docs": [],
             "synthesized_answer": "",
@@ -106,11 +114,18 @@ class SpectraAgentEngine:
             "reflection_notes": "",
             "retry_count": 0,
             "max_retries": max_retries if max_retries is not None else self.config.max_reflection_retries,
+            "tool_calls": [],
+            "tool_outputs": [],
+            "human_guidance": human_guidance,
+            "awaiting_human_approval": False,
             "trace_steps": [f"[Init] Trace {trace_id} started for query: \"{query}\""],
             "cost_usd": 0.0,
             "latency_ms": 0.0,
             "status": "in_progress",
         }
+
+        if human_guidance:
+            initial_state["trace_steps"].append(f"[CourseCorrection] User supplied guidance: \"{human_guidance}\"")
 
         # Run compiled LangGraph state machine
         final_state = self.graph.invoke(initial_state)
@@ -130,4 +145,3 @@ class SpectraAgentEngine:
             trace_id=trace_id,
             agent_steps=final_state.get("trace_steps", []),
         )
-
