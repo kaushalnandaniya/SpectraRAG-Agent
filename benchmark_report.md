@@ -20,9 +20,9 @@
 
 | Percentile | Measured Latency | Target SLA |
 | :--- | :--- | :--- |
-| **p50 (Median)** | **1.19 ms** | $< 200\text{ ms}$ |
-| **p95** | **1.23 ms** | $< 400\text{ ms}$ |
-| **p99** | **1.26 ms** | $< 600\text{ ms}$ |
+| **p50 (Median)** | **1.20 ms** | $< 200\text{ ms}$ |
+| **p95** | **1.25 ms** | $< 400\text{ ms}$ |
+| **p99** | **1.28 ms** | $< 600\text{ ms}$ |
 
 ## Retrieval Ablation Study
 
