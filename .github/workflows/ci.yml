@@ -33,3 +33,4 @@ jobs:
     - name: Run Benchmark Evaluation Smoke Test
       run: |
         python scripts/run_benchmarks.py --queries 50
+

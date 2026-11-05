@@ -14,3 +14,4 @@ def test_transcribe_bytes_mock():
     assert res.duration_sec >= 0.5
     assert len(res.timestamps) > 0
     assert "start" in res.timestamps[0]
+

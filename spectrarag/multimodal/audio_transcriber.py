@@ -80,3 +80,4 @@ class WhisperAudioTranscriber:
         with open(file_path, "rb") as f:
             content = f.read()
         return self.transcribe_bytes(content, filename=file_path)
+

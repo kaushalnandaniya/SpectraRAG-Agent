@@ -4,3 +4,4 @@ from spectrarag.multimodal.audio_transcriber import (
 )
 
 __all__ = ["WhisperAudioTranscriber", "AudioTranscriptionResult"]
+
